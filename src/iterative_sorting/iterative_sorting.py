@@ -1,4 +1,7 @@
+import random
 # TO-DO: Complete the selection_sort() function below
+
+
 def selection_sort(arr):
     # loop through n-1 elements
     for i in range(0, len(arr) - 1):
@@ -30,6 +33,10 @@ def selection_sort(arr):
     return arr
 
 
+arr4 = random.sample(range(200), 50)
+print(sorted(arr4))
+print("?/////////////////////")
+selection_sort(arr4)
 selection_sort([1, 2, 3, 4, 1, 1, 1, 4, 5])
 
 # TO-DO:  implement the Bubble Sort function below
