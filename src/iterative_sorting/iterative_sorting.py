@@ -43,26 +43,14 @@ def selection_sort(arr):
 
 
 def bubble_sort(arr):
-    n = len(arr)
     i = 0
-    swapped = False
-    print(arr, "before")
-    while i < n-1 and not swapped:
-        # if not swapped:
+    while i < len(arr)-1:
         if arr[i + 1] < arr[i]:
             arr[i], arr[i + 1] = arr[i + 1],  arr[i]
-            # swapped = True
-            # swapped = False
-        # elif not swapped:
             i = -1
         i += 1
-    # else:
-    #     i = 0
 
-    print(arr, "after")
-    return arr
-
-    print(arr, "after")
+    print(arr)
     return arr
 
 
