@@ -54,6 +54,7 @@ def bubble_sort(arr):
             # swapped = True
             # swapped = False
         # elif not swapped:
+            i = -1
         i += 1
     # else:
     #     i = 0
