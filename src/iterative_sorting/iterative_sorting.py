@@ -33,21 +33,43 @@ def selection_sort(arr):
     return arr
 
 
-arr4 = random.sample(range(200), 50)
-print(sorted(arr4))
-print("?/////////////////////")
-selection_sort(arr4)
-selection_sort([1, 2, 3, 4, 1, 1, 1, 4, 5])
+# arr4 = random.sample(range(200), 50)
+# print(sorted(arr4))
+# print("?/////////////////////")
+# selection_sort(arr4)
+# selection_sort([1, 2, 3, 4, 1, 1, 1, 4, 5])
 
 # TO-DO:  implement the Bubble Sort function below
 
 
 def bubble_sort(arr):
+    n = len(arr)
+    i = 0
+    swapped = False
+    print(arr, "before")
+    while i < n-1 and not swapped:
+        # if not swapped:
+        if arr[i + 1] < arr[i]:
+            arr[i], arr[i + 1] = arr[i + 1],  arr[i]
+            # swapped = True
+            # swapped = False
+        # elif not swapped:
+        i += 1
+    # else:
+    #     i = 0
 
+    print(arr, "after")
+    return arr
+
+    print(arr, "after")
     return arr
 
 
+bubble_sort([1, 5, 8, 4, 2, 9, 6, 0, 3, 7])
+
 # STRETCH: implement the Count Sort function below
+
+
 def count_sort(arr, maximum=-1):
 
     return arr
