@@ -22,7 +22,7 @@ def binary_search(arr, target):
 
     # TO-DO: add missing code
     while low <= high:
-        mid = low + (high - low)/2
+        mid = low + (high - low)//2
         # Check if target is present at mid
         if arr[mid] == target:
             return mid
