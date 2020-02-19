@@ -59,6 +59,26 @@ bubble_sort([1, 5, 8, 4, 2, 9, 6, 0, 3, 7])
 # STRETCH: implement the Count Sort function below
 
 
-def count_sort(arr, maximum=-1):
+# def count_sort(arr):
+#     try:
+#         for i in arr:
+#             i < 0
+#     except:
+#         return "Error, negative numbers not allowed in Count Sort"
+#     else:
+#         size = len(arr)
+#         output = [0] * size
+#         count = [0] * 10
+#         for i in range(0, size):
+#             count[arr[i]] += 1
+#         for i in range(1, 10):
+#             count[i] += count[i - 1]
+#         i = size - 1
+#         while i >= 0:
+#             output[count[arr[i]] - 1] = arr[i]
+#             count[arr[i]] -= 1
+#             i -= 1
+#         for i in range(0, size):
+#             arr[i] = output[i]
 
-    return arr
+#     return arr
